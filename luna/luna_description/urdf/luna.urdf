@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="luna">
+  <link name="base_footprint"/>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0.0 0.07" rpy="0 0 1.57079"/>
+  </joint>
+  
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0029784 0.069807 0.057193"
+        rpy="0 0 0" />
+      <mass
+        value="18.614" />
+      <inertia
+        ixx="0.35419"
+        ixy="0.0012119"
+        ixz="7.4351E-05"
+        iyy="0.29492"
+        iyz="-0.0051696"
+        izz="0.62087" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel_r_link">
+    <inertial>
+      <origin
+        xyz="0.032334 -1.7298E-07 2.7167E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.67381" />
+      <inertia
+        ixx="0.0013147"
+        ixy="9.1097E-13"
+        ixz="1.1442E-11"
+        iyy="0.000699"
+        iyz="1.1369E-08"
+        izz="0.00069898" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/wheel_r_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/wheel_r_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_r_joint"
+    type="continuous">
+    <origin
+      xyz="0.18525 0 0"
+      rpy="2.511 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_r_link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="wheel_l_link">
+    <inertial>
+      <origin
+        xyz="0.032334 -1.7298E-07 2.7167E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.67381" />
+      <inertia
+        ixx="0.0013147"
+        ixy="9.1118E-13"
+        ixz="1.1441E-11"
+        iyy="0.000699"
+        iyz="1.1369E-08"
+        izz="0.00069898" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/wheel_l_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/wheel_l_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_l_joint"
+    type="continuous">
+    <origin
+      xyz="-0.18525 0 0"
+      rpy="1.7964 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_l_link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="ems_link">
+    <inertial>
+      <origin
+        xyz="0.00056401 0.00057415 -0.030545"
+        rpy="0 0 0" />
+      <mass
+        value="0.062839" />
+      <inertia
+        ixx="1.1965E-05"
+        ixy="2.5958E-11"
+        ixz="7.6396E-11"
+        iyy="1.0932E-05"
+        iyz="-5.3432E-11"
+        izz="1.3191E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/ems_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/ems_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ems_joint"
+    type="fixed">
+    <origin
+      xyz="0.1505 -0.19808 0.10869"
+      rpy="3.1416 -0.018469 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="ems_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="power_link">
+    <inertial>
+      <origin
+        xyz="1.10113041945498E-05 -0.00106886638836576 -0.00698761482795951"
+        rpy="0 0 0" />
+      <mass
+        value="0.000881081180283445" />
+      <inertia
+        ixx="2.4854252581403E-08"
+        ixy="5.62881226768301E-11"
+        ixz="3.6706248682811E-11"
+        iyy="2.2386721062243E-08"
+        iyz="-1.11116869800135E-09"
+        izz="1.59685035141674E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/power_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.588235294117647 0.588235294117647 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/power_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="power_joint"
+    type="fixed">
+    <origin
+      xyz="0.068076 -0.21857 0.14614"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="power_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="volt_link">
+    <inertial>
+      <origin
+        xyz="0.024 0.014 -0.0029962"
+        rpy="0 0 0" />
+      <mass
+        value="0.0089208" />
+      <inertia
+        ixx="9.235E-07"
+        ixy="1.1435E-13"
+        ixz="-1.153E-21"
+        iyy="2.1659E-06"
+        iyz="-2.008E-21"
+        izz="2.649E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/volt_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/volt_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="volt_joint"
+    type="fixed">
+    <origin
+      xyz="0.054041 -0.21408 0.10925"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="volt_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="led_lilnk">
+    <inertial>
+      <origin
+        xyz="-0.14636 0.013092 0.10676"
+        rpy="0 0 0" />
+      <mass
+        value="0.025849" />
+      <inertia
+        ixx="9.117E-06"
+        ixy="1.5237E-08"
+        ixz="3.613E-12"
+        iyy="8.3701E-06"
+        iyz="-1.2396E-11"
+        izz="3.5191E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/led_lilnk.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/led_lilnk.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="led_joint"
+    type="fixed">
+    <origin
+      xyz="-0.2305 -0.0016144 0.12364"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="led_lilnk" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="caster_r_link">
+    <inertial>
+      <origin
+        xyz="-6.9389E-18 -5.5511E-17 0.014"
+        rpy="0 0 0" />
+      <mass
+        value="0.012704" />
+      <inertia
+        ixx="3.751E-06"
+        ixy="5.294E-23"
+        ixz="1.3509E-21"
+        iyy="3.751E-06"
+        iyz="-9.7599E-22"
+        izz="6.0336E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/caster_r_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.84314 0.81569 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/caster_r_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_r_joint"
+    type="fixed">
+    <origin
+      xyz="0.116 0.33025 -0.03325"
+      rpy="1.5708 -1.371 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="caster_r_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="caster_l_link">
+    <inertial>
+      <origin
+        xyz="-1.3878E-17 -5.5511E-17 -0.014"
+        rpy="0 0 0" />
+      <mass
+        value="0.012704" />
+      <inertia
+        ixx="3.751E-06"
+        ixy="5.294E-23"
+        ixz="-1.2953E-21"
+        iyy="3.751E-06"
+        iyz="-8.7706E-22"
+        izz="6.0336E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/caster_l_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.84314 0.81569 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/caster_l_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_l_joint"
+    type="fixed">
+    <origin
+      xyz="-0.116 0.33025 -0.03325"
+      rpy="1.5708 -1.4425 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="caster_l_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="floor_link">
+    <inertial>
+      <origin
+        xyz="-3.6729E-15 0.0025 -0.19874"
+        rpy="0 0 0" />
+      <mass
+        value="0.44621" />
+      <inertia
+        ixx="0.0013457"
+        ixy="-2.3274E-19"
+        ixz="-3.1788E-18"
+        iyy="0.0093012"
+        iyz="1.631E-19"
+        izz="0.0079574" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/floor_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/floor_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="floor_joint"
+    type="fixed">
+    <origin
+      xyz="0 0.08696 0.102"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="floor_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel_cover_link">
+    <inertial>
+      <origin
+        xyz="0.07613 0.040409 -0.0093356"
+        rpy="0 0 0" />
+      <mass
+        value="0.58047" />
+      <inertia
+        ixx="0.0013651"
+        ixy="0.00017677"
+        ixz="0.0003635"
+        iyy="0.005901"
+        iyz="0.00011409"
+        izz="0.0070413" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/wheel_cover_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/wheel_cover_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_cover_joint"
+    type="fixed">
+    <origin
+      xyz="0.23525 0 0"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_cover_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="mdui_link">
+    <inertial>
+      <origin
+        xyz="-0.064953 0.044849 0.0024896"
+        rpy="0 0 0" />
+      <mass
+        value="0.069365" />
+      <inertia
+        ixx="5.7353E-05"
+        ixy="-8.9567E-08"
+        ixz="-7.9861E-09"
+        iyy="0.00011262"
+        iyz="2.5867E-08"
+        izz="0.00016969" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/mdui_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/mdui_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="mdui_joint"
+    type="fixed">
+    <origin
+      xyz="0.2155 -0.0155 -0.00475"
+      rpy="0 0 0" />
+    <parent
+      link="wheel_cover_link" />
+    <child
+      link="mdui_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="base_scan">
+    <inertial>
+      <origin
+        xyz="0.0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.18368" />
+      <inertia
+        ixx="6.7746E-05"
+        ixy="-3.5606E-07"
+        ixz="2.9724E-08"
+        iyy="6.732E-05"
+        iyz="-1.6764E-08"
+        izz="0.000122" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/ydlidar_g2.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://luna_description/meshes/ydlidar_g2.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="0.0 0.0 0.245"
+      rpy="0 0 0" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="base_scan" />
+    <axis
+      xyz="0.0 0.0 0.0" />
+  </joint>
+
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="imu_link"/>
+    <origin xyz="0.0 0.0 0.20" rpy="0 0 0"/>
+  </joint>
+
+  <link name="imu_link">
+    <visual>
+      <geometry>
+          <box size="0.1 0.1 0.1"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

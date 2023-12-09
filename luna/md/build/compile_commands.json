@@ -1,0 +1,19 @@
+[
+{
+  "directory": "/home/tracer/ros2_ws/src/luna/md/build",
+  "command": "/usr/bin/g++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -I../include -isystem /opt/ros/foxy/include -isystem /home/tracer/ros2_ws/install/luna_msg/include  -g   -Wall -Wextra -Wpedantic -std=gnu++14 -o CMakeFiles/md.dir/src/md_node/main.cpp.o -c /home/tracer/ros2_ws/src/luna/md/src/md_node/main.cpp",
+  "file": "/home/tracer/ros2_ws/src/luna/md/src/md_node/main.cpp"
+},
+
+{
+  "directory": "/home/tracer/ros2_ws/src/luna/md/build",
+  "command": "/usr/bin/g++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -Dmd_library_EXPORTS -I../include -isystem /home/tracer/ros2_ws/install/luna_msg/include -isystem /opt/ros/foxy/include  -g -fPIC   -Wall -Wextra -Wpedantic -std=gnu++14 -o CMakeFiles/md_library.dir/src/md_node/com.cpp.o -c /home/tracer/ros2_ws/src/luna/md/src/md_node/com.cpp",
+  "file": "/home/tracer/ros2_ws/src/luna/md/src/md_node/com.cpp"
+},
+
+{
+  "directory": "/home/tracer/ros2_ws/src/luna/md/build",
+  "command": "/usr/bin/g++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -Dmd_library_EXPORTS -I../include -isystem /home/tracer/ros2_ws/install/luna_msg/include -isystem /opt/ros/foxy/include  -g -fPIC   -Wall -Wextra -Wpedantic -std=gnu++14 -o CMakeFiles/md_library.dir/src/md_node/robot.cpp.o -c /home/tracer/ros2_ws/src/luna/md/src/md_node/robot.cpp",
+  "file": "/home/tracer/ros2_ws/src/luna/md/src/md_node/robot.cpp"
+}
+]

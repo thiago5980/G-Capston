@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/luna/ros2_ws/install/luna_bringup/local/lib/python3.10/dist-packages",
+        "/home/luna/ros2_ws/build/waypoint_nav2",
+        "/home/luna/ros2_ws/install/waypoint_nav2/lib/python3.10/site-packages",
+        "/home/luna/ros2_ws/install/luna_msg/local/lib/python3.10/dist-packages",
+        "/home/luna/ros2_ws/install/iahrs_srv/local/lib/python3.10/dist-packages",
+        "/home/luna/ros2_ws/build/capston_motor",
+        "/home/luna/ros2_ws/install/capston_motor/lib/python3.10/site-packages",
+        "/home/luna/ros2_ws/install/capston_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/luna/ros2_ws/install/luna_bringup/local/lib/python3.10/dist-packages",
+        "/home/luna/ros2_ws/build/waypoint_nav2",
+        "/home/luna/ros2_ws/install/waypoint_nav2/lib/python3.10/site-packages",
+        "/home/luna/ros2_ws/install/luna_msg/local/lib/python3.10/dist-packages",
+        "/home/luna/ros2_ws/install/iahrs_srv/local/lib/python3.10/dist-packages",
+        "/home/luna/ros2_ws/build/capston_motor",
+        "/home/luna/ros2_ws/install/capston_motor/lib/python3.10/site-packages",
+        "/home/luna/ros2_ws/install/capston_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

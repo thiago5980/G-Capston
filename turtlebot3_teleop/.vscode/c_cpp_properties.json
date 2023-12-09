@@ -1,0 +1,37 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/luna/ros2_ws/install/md/include/**",
+        "/home/luna/ros2_ws/install/serial/include/**",
+        "/home/luna/ros2_ws/install/luna_msg/include/**",
+        "/home/luna/ros2_ws/install/iahrs_srv/include/**",
+        "/home/luna/ros2_ws/install/capston_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/luna/ros2_ws/src/capston_2023/capston_main/include/**",
+        "/home/luna/ros2_ws/src/capston_2023/capston_plan/include/**",
+        "/home/luna/ros2_ws/src/luna/arduino_msg/include/**",
+        "/home/luna/ros2_ws/src/luna/iahrs_driver/include/**",
+        "/home/luna/ros2_ws/src/luna/iahrs_srv/include/**",
+        "/home/luna/ros2_ws/src/luna/luna_arduino/include/**",
+        "/home/luna/ros2_ws/src/luna/luna_cartographer/include/**",
+        "/home/luna/ros2_ws/src/luna/luna_description/include/**",
+        "/home/luna/ros2_ws/src/luna/luna_msg/include/**",
+        "/home/luna/ros2_ws/src/luna/luna_navigation2/include/**",
+        "/home/luna/ros2_ws/src/luna/md/include/**",
+        "/home/luna/ros2_ws/src/serial/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

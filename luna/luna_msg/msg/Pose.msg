@@ -1,0 +1,12 @@
+float32 x
+float32 y
+float32 theta
+float32 linear_velocity
+float32 angular_velocity
+uint8 us1
+uint8 us2
+uint8 us3
+uint8 us4
+uint8 platform_state
+uint8 left_motor_state
+uint8 right_motor_state
