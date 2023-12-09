@@ -1,0 +1,10 @@
+capston_main_node:
+  ros__parameters:
+    origin_x : -15.4
+    origin_y : -23.6
+    start_x : -0.19006 # m
+    start_y : -11.14016 # m
+    robot_radius : 20 # cm
+    sweep_step : 20 # cm
+    map_height : 717 # pixel
+    map_location : /home/luna/ros2_ws/src/capston_2023/capston_plan/data/final_outside_smoke.png

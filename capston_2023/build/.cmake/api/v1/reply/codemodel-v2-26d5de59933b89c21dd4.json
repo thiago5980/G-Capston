@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "capston_main",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "capston_main_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-capston_main_node-Debug-4802f1f1d81324dfa116.json",
+					"name" : "capston_main_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "capston_main_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-capston_main_uninstall-Debug-78c7b20107e40b5b789c.json",
+					"name" : "capston_main_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_service::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_service-Debug-dd0138ff4b9d824c0bcf.json",
+					"name" : "test_service",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-726ba477f95bc737f3b7.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tracer/ros2_ws/src/capston_2023/build",
+		"source" : "/home/tracer/ros2_ws/src/capston_2023/capston_main"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

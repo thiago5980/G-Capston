@@ -1,0 +1,8 @@
+geometry_msgs/Point32 origin
+geometry_msgs/Point32 start_position
+int16 robot_radius
+int16 sweep_step
+int32 map_height
+string map_location
+---
+bool end_cal
